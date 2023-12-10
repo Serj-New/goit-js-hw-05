@@ -6,7 +6,7 @@ const getTotalBalanceByGender = (users, gender) => {
   .reduce((totalBalance, user) => {return totalBalance + user.balance}, 0)
 }
 
-const allUsers = [
+const allClients /*Я замінив назву змінноъ allUsers на allClients, щоб в консолі не виводилась помилка про те, що змінна allUsers вже була декларована раніше*/= [
     {
     name: "Moore Hensley",
     gender: "male",
@@ -44,6 +44,6 @@ const allUsers = [
   }
 ];
 
-console.log(getTotalBalanceByGender(allUsers, "male")); // 12053
+console.log(getTotalBalanceByGender(allClients, "male")); // 12053
 
-console.log(getTotalBalanceByGender(allUsers, "female")); // 8863
+console.log(getTotalBalanceByGender(allClients, "female")); // 8863
